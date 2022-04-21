@@ -22,6 +22,17 @@ public class Cuenta{
 		this.titular = miCuenta.titular;
 		this.saldo = miCuenta.saldo;
 	}
+	public Cuenta(){
+		Scanner sc = new Scanner (System.in);
+		String titular;
+		double saldo;
+		System.out.print("Introduce el NOMBRE del TITULAR: ");
+		titular = sc.nextLine();
+		System.out.print("Introduce el SALDO actual de la cuenta: ");
+		saldo = sc.nextDouble();
+		this.titular = titular;
+		this.saldo = saldo;
+	}
 	public void setTitular(String titular){
 		this.titular = titular;
 	}

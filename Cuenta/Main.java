@@ -11,6 +11,7 @@ public class Main{
 		Cuenta miCuenta = new Cuenta("Pablo", 7000);
 		Cuenta tuCuenta = new Cuenta("Raquel");
 		Cuenta otraCuenta = new Cuenta(miCuenta);
+		Cuenta pideCuenta = new Cuenta();
 		System.out.println(miCuenta);
 
 		miCuenta.setSaldo(3000);
@@ -30,6 +31,7 @@ public class Main{
 		System.out.println(miCuenta.getTitular());
 
 		System.out.println(otraCuenta);
+		System.out.println(pideCuenta);
 
 
 	}
