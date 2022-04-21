@@ -10,6 +10,7 @@ public class Main{
 	public static void main(String[] args){
 		Cuenta miCuenta = new Cuenta("Pablo", 7000);
 		Cuenta tuCuenta = new Cuenta("Raquel");
+		Cuenta otraCuenta = new Cuenta(miCuenta);
 		System.out.println(miCuenta);
 
 		miCuenta.setSaldo(3000);
@@ -27,6 +28,8 @@ public class Main{
 		System.out.println(tuCuenta.getSaldo());
 
 		System.out.println(miCuenta.getTitular());
+
+		System.out.println(otraCuenta);
 
 
 	}

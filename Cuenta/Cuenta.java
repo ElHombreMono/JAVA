@@ -18,6 +18,10 @@ public class Cuenta{
 		this.titular = titular;
 		this.saldo = 0;
 	}
+	public Cuenta(Cuenta miCuenta){
+		this.titular = miCuenta.titular;
+		this.saldo = miCuenta.saldo;
+	}
 	public void setTitular(String titular){
 		this.titular = titular;
 	}
